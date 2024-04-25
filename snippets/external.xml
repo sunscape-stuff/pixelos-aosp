@@ -110,11 +110,12 @@
   <!-- Begin Extras -->
 
   <!-- Device -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel" />
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr_legacy-um" remote="pixel" />
-  <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr_sm8450" remote="pixel" />
-  <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr_sm8550" remote="pixel" />
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" remote="LineageOS" />
+  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-21.0-legacy-um" remote="LineageOS" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-21.0-legacy-um" remote="LineageOS" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="lineage-21.0-caf-sm8450" remote="LineageOS" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" remote="LineageOS" />
 
   <!-- External -->
   <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" groups="qcom,sdm660" remote="LineageOS" />
